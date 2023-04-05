@@ -1,0 +1,275 @@
+@import url(/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+.flex{display: flex;}
+
+/* position fixed해서 w100%, h100%해도 된다*/
+/* 굳이 wrap안 만들고 body에 넣어도 된다 */
+body{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(./sources/bottles.jpg) no-repeat center top /cover;
+}
+/* background 축약해서 쓸 경우 위치를 반드시 지정해줘야 background-size가 지정된다 */
+
+/* 딤 깔기? */
+body::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+}
+/* 네비바 */
+header{
+    height: 100px;
+    background: #222;
+    position: relative;
+    z-index: 999;
+}
+.more{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+.logo{
+    position: relative;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, 50%);
+}
+nav{
+    width: 200px;
+    height: calc(100vh - 100px);
+    position: relative;
+    top: 53px;
+    background: rgba(12,12,12,.85);
+    color: #fff;
+    padding: 20px 10px;
+    margin-left: -200px;
+}
+.mainmenu > a{ 
+    font-family: 'Libre Bodoni', serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+.submenu a{
+    display: block;
+    padding: 5px;
+}
+.gnb{
+    padding-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.close{
+    cursor: pointer;
+    padding: 0 5px
+    ;
+}
+.close::after{
+    content: url(./sources/close.gif);
+}
+
+/* 비디오 */
+main{
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    left: calc(50% - 450px);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 990;
+}
+main video{
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+}
+/* 비디오 버튼 */
+main .btn{
+    justify-content: center;
+    text-transform: capitalize;
+    position: absolute;
+    width: 100%;
+    top: 460px;
+    z-index: 999;
+}
+.btn li{
+    padding: 0 10px;
+}
+.btn li a{
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    background:#fff;
+    border-radius: 0 10px 0 10px;
+}
+.btn li a:hover{
+    background: #222;
+    color: #fff;
+}
+/* 아이콘 */
+.mainImg{
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 990;
+    margin-left: 300px;
+    cursor: pointer;
+}
+.mainImg img:hover{
+    animation: pulse 1.8s infinite;
+}
+.mainImg img{
+    width: 110px;
+}
+.mainImg p{
+    margin-top: 20px;
+    padding: 10px;
+    text-transform: capitalize;
+    color: #000;
+    background: #fff;
+    border-radius: 50%;
+}
+@keyframes pulse {
+    0% {
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    transform: scale3d(1, 1, 1);
+    }
+    } 
+/*  */
+article{
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+article.on{
+    display: block;
+}
+.col1{
+    text-align: center;
+    padding: 0 20px;
+}
+.col1 h3{
+    padding-top: 80px;
+    font-family: 'Libre Bodoni', serif;
+    font-size: 25px;
+    letter-spacing: 30px;
+}
+.eve1{
+    padding-top: 10px;
+    letter-spacing: 8px;
+    line-height: 20px;
+}
+.col1 h4{
+    text-transform: capitalize;
+    padding-top: 45px;
+    font-family: 'Libre Bodoni', serif;
+    font-size: 23px;
+    letter-spacing: 10px;
+}
+.eve2{
+    padding: 5px;
+    letter-spacing: 6px;
+    line-height: 23px;
+    text-align: center;
+}
+
+/* 아주 중요 메인/버튼과 article이 겹친 상태라서 버튼이 안먹는다
+    그래서 메인, 버튼, article모두 position-absolute를 하고 
+    버튼의 z-index를 높여야한다. */
+article{    
+    width: 1000px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 502px;
+}
+.eventwrap{
+    text-align: center;
+    background: #fff;
+    opacity: 0;
+}
+.col{
+    width: 50%;
+}
+.col2 img{
+    width: 100%;
+}
+.clsbtn{
+    position: absolute;
+    padding: 2px;
+    bottom: 5px;
+    right: 5px;
+}
+.clsbtn::after{
+    content: url(./sources/close.gif);
+}
+/* span */
+article span{
+    position: absolute;
+    background: #424242;
+}
+span.top{
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 4px;
+}
+span.right{
+    right: 0;
+    top: 0;
+    width: 4px;
+    height: 0%;
+}
+span.bottom{
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+}
+span.left{
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    height: 0%;
+} 
+/*펼쳐지기 */
+.iconclick{
+    width: 100%;
+    position: absolute;
+    height: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    background: #ffffff;
+    overflow: hidden;
+}
+.iconclick img{
+    height: 360px;
+    border: 1px solid #000;
+}
+.iconclick ul{
+    justify-content: space-evenly;
+    align-items: center;
+}
+.iconclick.on{
+    height: 380px;
+}
+.button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
