@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>넥슨피시방</title>
+    <link rel="stylesheet" href="/넥슨피시방/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <style>
+      .swiper {
+        width: 470px;
+        height: 652px;
+        position: relative;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="inner flex">
+        <div class="logo">
+          <a href="#"></a>
+          <span class="hidden">넥슨피시방로고</span>
+        </div>
+        <nav>
+          <ul class="flex">
+            <li class="main">
+              <a href="#">MY PC방</a>
+              <ul class="sub">
+                <li><a href="#">내 정보관리</a></li>
+                <li><a href="#">이용현황</a></li>
+                <li><a href="#">결제현황</a></li>
+                <li><a href="#">환불*이전신청</a></li>
+              </ul>
+            </li>
+            <li class="main">
+              <a href="#">상품과 결제</a>
+              <ul class="sub">
+                <li><a href="#">상품안내 및 결제</a></li>
+                <li><a href="#">프리미엄 혜택</a></li>
+              </ul>
+            </li>
+            <li class="main">
+              <a href="#">이벤트</a>
+              <ul class="sub">
+                <li><a href="#">진행 이벤트</a></li>
+                <li><a href="#">종료 이벤트</a></li>
+                <li><a href="#">진행현황</a></li>
+              </ul>
+            </li>
+            <li class="main">
+              <a href="#">고객센터</a>
+              <ul class="sub">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">이메일문의</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">원격지원</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- <div class="menuBg"></div> -->
+      </div>
+    </header>
+    <div class="container inner flex">
+      <main class="flex">
+        <div class="goods respond"></div>
+        <div class="pay respond"></div>
+        <div class="game respond"></div>
+        <div class="event respond"></div>
+        <div class="notic">
+          <span class="more"
+            ><a href="#"><img src="./images/더보기.gif" alt="" /></a
+          ></span>
+          <h3 class="hidden">공지사항</h3>
+          <ul>
+            <li>
+              <a href="#"><p>자주 찾는 질문 TOP5</p></a><span>2019-03-06</span>
+            </li>
+            <li>
+              <a href="#"
+                ><p>[수정] 02/02(목) 넥슨PC방 서비스 게임 정기점검 안내</p></a
+              ><span>2023-02-01</span>
+            </li>
+            <li>
+              <a href="#"
+                ><p>01-26(목) 나이트워커 서비스 오픈 및 상용화 안내</p></a
+              ><span>2023-01-26</span>
+            </li>
+            <li>
+              <a href="#"
+                ><p>[수정] 01-26(목) 넥슨 PC방 서비스 게임 정기점검 안내</p></a
+              ><span>2023-01-26</span>
+            </li>
+          </ul>
+        </div>
+        <div class="ip respond"></div>
+        <div class="refund respond"></div>
+        <div class="tax respond"></div>
+        <div class="cs respond"></div>
+        <div class="remote respond"></div>
+      </main>
+      <aside>
+        <!-- 아이디비밀번호는 form태그로 감싸야한다. 보안의 문제로 -->
+        <form class="login">
+          <div class="row flex">
+            <div class="inputBox">
+              <input type="text" id="textid" placeholder="아이디 입력" />
+              <label for="textid" class="hidden">아이디 입력</label>
+              <input
+                type="password"
+                id="textpassword"
+                placeholder="비밀번호 입력"
+              />
+              <label for="textpassword" class="hidden">비밀번호 입력</label>
+            </div>
+            <button type="submit">로그인</button>
+          </div>
+          <div class="row2">
+            <input type="checkbox" id="link" />
+            <label for="link">MY PC방 바로가기</label>
+            <input type="checkbox" id="id" />
+            <label for="id">아이디저장</label>
+            <span>회원가입</span>│ <span>아이디찾기</span>│
+            <span>비밀번호</span>│
+          </div>
+        </form>
+        <div class="ip_address"></div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./images/나이트 워커 프리미엄 혜택 안내 2023년 01월 26일(목) _.jpg"
+                alt=""
+              />
+              <h2 class="destext">
+                나이트 워커 프리미엄 혜택 안내 2023년 01월 26일(목)
+              </h2>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/EA SPORTS™ FIFA 온라인 4 PREMIUM PC방 2022년 12월_.png"
+                alt=""
+              />
+              <h2 class="destext">
+                EA SPORTS™ FIFA 온라인 4 PREMIUM PC방 <br />2022년 12월
+              </h2>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/아키에이지 신규 서버 _데이어_ 오픈 2022년 12월 15일(목) 점검_yyt.png"
+                alt=""
+              />
+              <h2 class="destext">
+                아키에이지 신규 서버 _데이어_ 오픈 <br />2022년 12월 15일(목)
+                점검
+              </h2>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/마비노기 PC방 혜택 강화  2022년 12월 15일(목) 점검 후.png"
+                alt=""
+              />
+              <h2 class="destext">
+                마비노기 PC방 혜택 강화 <br />2022년 12월 15일(목) 점검 후
+              </h2>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/PC방에서는 클로저스를 하자 2022년 12월  01일(목)점검 후 __yyth.png"
+                alt=""
+              />
+              <h2 class="destext">
+                PC방에서는 클로저스를 하자 <br />2022년 12월 01일(목)점검 후
+              </h2>
+            </div>
+          </div>
+          <div class="prev btn"></div>
+          <div class="next btn"></div>
+        </div>
+      </aside>
+    </div>
+    <footer>
+      <div class="inner">
+        <div class="logobtm">
+          <h1><img src="/넥슨피시방/images/footer_logo.png" alt="" /></h1>
+        </div>
+        <div class="info">
+          <div class="footer_menu">
+            <a href="#"></a>
+          </div>
+          <div class="f-row flex">
+            <div class="address"></div>
+            <div class="familysite flex">
+              <select id="familysite">
+                <option value="검은사막">검은사막</option>
+                <option value="그랜드체이스 클래식">그랜드체이스 클래식</option>
+                <option value="나이트워커">나이트워커</option>
+                <option value="넥슨닷컴">넥슨닷컴</option>
+                <option value="던전앤파이터">던전앤파이터</option>
+                <option value="드래곤네스트">드래곤네스트</option>
+                <option value="로스트사가">로스트사가</option>
+                <option value="마비노기">마비노기</option>
+                <option value="마비노기 영웅전">마비노기 영웅전</option>
+                <option value="메이플스토리">메이플스토리</option>
+                <option value="메이플스토리2">메이플스토리2</option>
+                <option value="바람의나라">바람의나라</option>
+                <option value="블파이터">블파이터</option>
+                <option value="사이퍼즈">사이퍼즈</option>
+                <option value="서든어택">서든어택</option>
+                <option value="아스가르드">아스가르드</option>
+                <option value="아키에이지">아키에이지</option>
+                <option value="어둠의전설">어둠의전설</option>
+                <option value="엘소드">엘소드</option>
+                <option value="워록">워록</option>
+                <option value="일랜시아">일랜시아</option>
+                <option value="카운터-스트라이크 온라인">카운터-스트라이크 온라인</option>
+                <option value="카트라이더: 드리프트">카트라이더: 드리프트</option>
+                <option value="커츠펠">커츠펠</option>
+                <option value="크레이지 아케이드">크레이지 아케이드</option>
+                <option value="크로우즈">크로우즈</option>
+                <option value="클로저스">클로저스</option>
+                <option value="테일즈위버">테일즈위버</option>
+                <option value="프리스타일">프리스타일</option>
+                <option value="프리스타일2">프리스타일2</option>
+                <option value="프리스타일풋볼Z">프리스타일풋볼Z</option>
+                <option value="FIFA 온라인 4">FIFA 온라인 4</option>
+              </select>
+              <button>이동</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/jquery-3.6.3.min.js"></script>
+    <script src="/넥슨피시방/scripts/다시.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      $(".prev").click(function () {
+        swiper.slidePrev();
+      });
+      $(".next").click(function () {
+        swiper.slideNext();
+      });
+    </script>
+  </body>
+</html>
