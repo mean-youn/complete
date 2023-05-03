@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* force scrollbar */
+      html {
+        overflow-y: scroll;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      /* ---- isotope ---- */
+
+      .grid {
+        background: #ddd;
+        margin: auto;
+      }
+
+      /* clear fix */
+      .grid:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      /* ---- .grid-item ---- */
+
+      .grid-item {
+        width: 450px;
+      }
+
+      .grid-item {
+        float: left;
+      }
+
+      .grid-item img {
+        display: block;
+        max-width: 100%;
+      }
+      @media screen and (max-width:779px) {
+        .gird{
+            width:450px;
+        }
+      }
+      @media screen and (min-width:780px) and (max-width:1200px) {
+        .gird{
+            width: 900px;
+        }
+      }
+      @media screen and (min-width:1201px) {
+        .grid{
+            width: 1350px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="grid-item">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg"
+        />
+      </div>
+    </div>
+
+    <script src="./scripts/jquery-3.6.3.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+      $(".grid").isotope({
+        itemSelector: ".grid-item",
+        masonry: {
+          columnWidth: 450,
+        },
+      });
+
+      // layout Isotope after each image loads
+      $grid.imagesLoaded().progress(function () {
+        $grid.isotope("layout");
+      });
+    </script>
+  </body>
+</html>
