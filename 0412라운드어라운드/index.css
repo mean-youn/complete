@@ -1,0 +1,512 @@
+@import url(/reset.css);
+@font-face {
+  font-family: vEFK2;
+  src: url(./font/vEFK2-VJISZe3O_rc3ZVYh4aTwNO8tfdTbzIx6SmGN7aVT6YLxnNoW0zig.109.woff2);
+}
+section#sect1 {
+  width: 100vw;
+  height: 100vh;
+}
+section#sect1 article.content {
+  position: relative;
+}
+section#sect1 article.content .logowrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section#sect1 article.content .logowrap h1 {
+  width: 80%;
+}
+section#sect1 article.content .logowrap h1 img {
+  display: block;
+  width: 100%;
+}
+section#sect1 article.content .logowrap p {
+  padding-top: 20px;
+}
+section#sect2 {
+  width: 100vw;
+}
+section#sect2 article.summary {
+  position: relative;
+  width: 100%;
+  background: url(./images/parallax_bg.jpg) left top/cover;
+  background-attachment: fixed;
+}
+section#sect2 article.summary .sumwrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 80%;
+}
+section#sect2 article.summary .sumwrap h2 {
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 5vw;
+}
+section#sect2 article.summary .sumwrap p {
+  padding: 20px 0 20px 0;
+}
+section#sect2 article.summary .sumwrap a {
+  margin-top: 5px;
+  border: 1px solid white;
+  padding: 8px;
+}
+section#sect2 article.RARA {
+  width: 100vw;
+  position: relative;
+}
+section#sect2 article.RARA h2 {
+  text-align: center;
+  position: relative;
+}
+section#sect2 article.RARA .grid {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+}
+section#sect2 article.RARA .grid p {
+  color: white;
+}
+section#sect2 article.RARA .grid div:nth-child(1) {
+  padding: 10px;
+}
+section#sect3 article.sticky {
+  background: url(./images/rr_0.jpg) no-repeat left top/contain;
+}
+section#sect4 article.sticky {
+  background: url(./images/visual02.jpg) no-repeat left top/contain;
+  background-position-x: 49vw;
+}
+section#sect3, section#sect4 {
+  display: flex;
+}
+section#sect3 article, section#sect4 article {
+  position: relative;
+}
+section#sect3 article a.more, section#sect4 article a.more {
+  padding: 10px;
+  border: 1px solid #000;
+}
+section#sect3 article.sticky, section#sect4 article.sticky {
+  width: 50vw;
+  height: 100vh;
+  background-attachment: fixed;
+  position: sticky;
+  top: 0;
+}
+section#sect3 article.content, section#sect4 article.content {
+  text-align: center;
+}
+section#sect3 article.content .inner, section#sect4 article.content .inner {
+  margin: auto;
+}
+section#sect3 article.content .inner .probox ul, section#sect4 article.content .inner .probox ul {
+  display: flex;
+  align-items: center;
+}
+section#sect3 article.content .inner .probox ul li.proText .desc, section#sect4 article.content .inner .probox ul li.proText .desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#sect3 article.content .inner .probox ul li.proText .desc a.img2, section#sect4 article.content .inner .probox ul li.proText .desc a.img2 {
+  width: 100%;
+  display: flex;
+}
+section#sect3 article.content .inner .probox ul li.proText .desc a.img2 img, section#sect4 article.content .inner .probox ul li.proText .desc a.img2 img {
+  width: 50%;
+}
+section#sect5 .inner {
+  margin: auto;
+}
+section#sect5 .inner h2 {
+  text-align: center;
+  padding: 100px 0;
+}
+section#sect5 .inner .swBtn {
+  color: #999;
+}
+
+footer {
+  background: rgb(250, 249, 249);
+  margin-top: 150px;
+  padding: 50px 0;
+  color: #666;
+}
+footer .inner {
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+footer .inner > li img {
+  width: 160px;
+}
+footer .inner .col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+footer .inner .col2 .fmenu {
+  color: #333;
+}
+footer .inner .col2 .fmenu ul {
+  display: flex;
+}
+footer .inner .col2 .fmenu ul li {
+  padding-right: 24px;
+}
+footer .inner .col2 .fmenu ul li:nth-child(1) {
+  font-weight: bold;
+}
+footer .inner .col2 ul.comInfo {
+  padding: 20px 0;
+  line-height: 18px;
+}
+footer .inner .col2 .copyright {
+  color: #999;
+}
+
+a.more {
+  position: relative;
+}
+
+a.more::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  background: rgba(153, 153, 153, 0.2666666667);
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.35s;
+}
+
+a.more:hover::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 779px) {
+  #sect1 article {
+    width: 100%;
+  }
+  #sect1 article.content {
+    height: 30%;
+  }
+  #sect1 article.back {
+    height: 70%;
+    background: url(./images/visual01.jpg) no-repeat left top/cover;
+    background-attachment: fixed;
+  }
+  #sect2 article.summary {
+    height: 70vh;
+  }
+  #sect2 article.RARA {
+    height: 80vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  #sect2 article.RARA h2 {
+    font-size: 20px;
+    line-height: 40px;
+    padding: 20px 0 10px 0;
+  }
+  #sect2 article.RARA .grid {
+    width: 100%;
+    height: 70%;
+  }
+  #sect2 article.RARA .grid p {
+    width: 80%;
+  }
+  #sect2 article.RARA .grid div:nth-child(1) {
+    grid-row: 1/3;
+    grid-column: 1/3;
+    background: #5a725d;
+  }
+  #sect2 article.RARA .grid div:nth-child(2) {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    background: url(./images/moment05.jpg) no-repeat center/cover;
+  }
+  #sect2 article.RARA .grid div:nth-child(3) {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    background: url(./images/moment04.jpg) no-repeat center/cover;
+  }
+  #sect2 article.RARA .grid div:nth-child(4) {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background: url(./images/moment02.jpg) no-repeat center/cover;
+  }
+  #sect2 article.RARA .grid div:nth-child(5) {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    background: url(./images/moment01.jpg) no-repeat center/cover;
+  }
+  #sect2 article.RARA .grid div:nth-child(6) {
+    grid-row: 3/5;
+    grid-column: 2/4;
+    background: url(./images/moment03.jpg) no-repeat center/cover;
+  }
+  #sect3 article,
+  #sect4 article {
+    width: 100vw;
+  }
+  #sect3 article.sticky,
+  #sect4 article.sticky {
+    display: none;
+  }
+  #sect3 article.content,
+  #sect4 article.content {
+    position: relative;
+  }
+  #sect3 article.content .inner,
+  #sect4 article.content .inner {
+    width: 98%;
+  }
+  #sect3 article.content .inner .textbox,
+  #sect4 article.content .inner .textbox {
+    padding: 20px 0;
+  }
+  #sect3 article.content .inner .textbox p,
+  #sect4 article.content .inner .textbox p {
+    padding: 30px 0 40px 0;
+  }
+  #sect3 article.content .inner .probox,
+  #sect4 article.content .inner .probox {
+    padding: 50px;
+  }
+  #sect3 article.content .inner .probox ul,
+  #sect4 article.content .inner .probox ul {
+    flex-direction: column;
+  }
+  #sect3 article.content .inner .probox ul li,
+  #sect4 article.content .inner .probox ul li {
+    padding: 10px 0;
+    width: 100%;
+  }
+  #sect3 article.content .inner .probox ul li > img,
+  #sect4 article.content .inner .probox ul li > img {
+    width: 50%;
+  }
+  #sect3 article.content .inner .probox ul li .desc,
+  #sect4 article.content .inner .probox ul li .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #sect3 article.content .inner .probox ul li .desc h2,
+  #sect4 article.content .inner .probox ul li .desc h2 {
+    line-height: 40px;
+    font-size: 20px;
+  }
+  #sect3 article.content .inner .probox ul li .desc p,
+  #sect4 article.content .inner .probox ul li .desc p {
+    font-size: 13px;
+    line-height: 25px;
+    padding: 20px 0;
+  }
+  #sect3 article.content .inner .probox ul li .desc img,
+  #sect4 article.content .inner .probox ul li .desc img {
+    padding: 10px 0;
+  }
+  #sect3 article.content .inner .probox ul li .desc a.img2,
+  #sect4 article.content .inner .probox ul li .desc a.img2 {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  #sect3 article.content .inner .probox ul li .desc a.img2 img,
+  #sect4 article.content .inner .probox ul li .desc a.img2 img {
+    display: block;
+    width: 50%;
+  }
+  #sect5 .inner {
+    width: 90%;
+  }
+  #sect5 .inner h2 {
+    font-size: 20px;
+  }
+  footer .inner {
+    width: 95%;
+    flex-direction: column;
+  }
+  footer .inner > li {
+    width: 100%;
+  }
+  footer .inner .col2 {
+    padding: 20px 0;
+  }
+}
+@media screen and (min-width: 780px) {
+  #sect1 {
+    display: flex;
+  }
+  #sect1 article {
+    width: 50%;
+  }
+  #sect1 article.back {
+    background: url(./images/visual01.jpg) no-repeat left top/cover;
+    background-position-x: 49vw;
+    background-attachment: fixed;
+  }
+  #sect2 article.summary {
+    height: 50vh;
+  }
+  #sect2 article.RARA {
+    height: 80vh;
+  }
+  #sect2 article.RARA h2 {
+    font-size: 40px;
+    padding: 30px 0;
+  }
+  #sect2 article.RARA .grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 80%;
+    height: 60%;
+  }
+  #sect2 article.RARA .grid p {
+    width: 100%;
+  }
+  #sect2 article.RARA .grid div:nth-child(2) {
+    grid-row: 1/5;
+    grid-column: 1/4;
+    background: url(./images/moment01.jpg) no-repeat center/cover;
+  }
+  #sect2 article.RARA .grid div:nth-child(1) {
+    grid-row: 1/4;
+    grid-column: 4/5;
+    background: #5a725d;
+  }
+  #sect2 article.RARA .grid div:nth-child(3) {
+    grid-row: 4/5;
+    grid-column: 4/5;
+    background: url(./images/moment05.jpg) no-repeat center/cover;
+  }
+  #sect2 article.RARA .grid div:nth-child(4) {
+    grid-row: 1/2;
+    grid-column: 5/6;
+    background: url(./images/moment02.jpg) no-repeat center/cover;
+  }
+  #sect2 article.RARA .grid div:nth-child(5) {
+    grid-row: 1/2;
+    grid-column: 6/7;
+    background: url(./images/moment03.jpg) no-repeat center/cover;
+  }
+  #sect2 article.RARA .grid div:nth-child(6) {
+    grid-row: 2/4;
+    grid-column: 5/7;
+    background: url(./images/moment04.jpg) no-repeat center/cover;
+  }
+  #sect2 article.RARA .grid div:nth-child(7) {
+    grid-row: 4/5;
+    grid-column: 5/7;
+    background: #5a725d;
+  }
+  #sect3 article,
+  #sect4 article {
+    width: 50%;
+  }
+  #sect3 article.content .inner,
+  #sect4 article.content .inner {
+    width: 98%;
+  }
+  #sect3 article.content .inner .probox,
+  #sect4 article.content .inner .probox {
+    padding-bottom: 300px;
+  }
+  #sect3 article.content .inner .probox ul,
+  #sect4 article.content .inner .probox ul {
+    flex-direction: row;
+  }
+  #sect3 article.content .inner .probox ul li.proImg,
+  #sect4 article.content .inner .probox ul li.proImg {
+    width: 306px;
+  }
+  #sect3 article.content .inner .probox ul li.proImg img,
+  #sect4 article.content .inner .probox ul li.proImg img {
+    width: 100%;
+  }
+  #sect3 article.content .inner .probox ul li.proText,
+  #sect4 article.content .inner .probox ul li.proText {
+    width: 70%;
+  }
+  #sect3 article.content .inner .probox ul li.proText .desc h2,
+  #sect4 article.content .inner .probox ul li.proText .desc h2 {
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 30px;
+  }
+  #sect3 article.content .inner .probox ul li.proText .desc p,
+  #sect4 article.content .inner .probox ul li.proText .desc p {
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 40px;
+  }
+  #sect3 article.content .inner .probox ul li.proText .desc a.img2,
+  #sect4 article.content .inner .probox ul li.proText .desc a.img2 {
+    display: block;
+    padding-top: 40px;
+  }
+  #sect3 article.content .inner .textbox,
+  #sect4 article.content .inner .textbox {
+    padding: 300px 0;
+  }
+  #sect3 article.content .inner .textbox h2,
+  #sect4 article.content .inner .textbox h2 {
+    font-size: 50px;
+    padding: 30px 0;
+  }
+  #sect3 article.content .inner .textbox p,
+  #sect4 article.content .inner .textbox p {
+    font-size: 20px;
+    padding: 10px 0 40px 0;
+  }
+  #sect5 .inner {
+    width: 90%;
+  }
+  #sect5 .inner h2 {
+    font-size: 50px;
+  }
+  footer .inner {
+    width: 80%;
+  }
+  footer .inner .col1 {
+    width: 30%;
+  }
+  footer .inner .col2 {
+    padding-left: 60px;
+    border-left: 1px solid #999;
+  }
+}
+@media screen and (min-width: 1201px) {
+  #sect1 {
+    display: flex;
+  }
+  #sect1 article {
+    width: 50%;
+  }
+  #sect1 article.back {
+    background: url(./images/visual01.jpg) no-repeat left top/contain;
+    background-position-x: 49vw;
+    background-attachment: fixed;
+  }
+  #sect2 article.RARA .grid {
+    width: 60%;
+    height: 62%;
+    max-width: 1200px;
+  }
+  #sect3 article.content .inner,
+  #sect4 article.content .inner {
+    width: 80%;
+  }
+}
