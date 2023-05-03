@@ -1,0 +1,584 @@
+@import url(/reset.css);
+@font-face {
+  font-family: free;
+  src: url(./font/free-fa-solid-900.woff2);
+}
+@font-face {
+  font-family: Download;
+  src: url(./font/다운로드.woff);
+}
+@font-face {
+  font-family: NanumB;
+  src: url(./font/NanumSquareB.woff2);
+}
+@font-face {
+  font-family: NanumR;
+  src: url(./font/NanumSquareR.woff2);
+}
+
+.wrap {
+  width: 100vw;
+  // overflow: hidden;
+  font-family: NanumR;
+  header {
+    position: fixed;
+    z-index: 90;
+    width: 100vw;
+    height: 60px;
+    .inner {
+      display: flex;
+      h1.logo {
+        img {
+          width: 100%;
+        }
+      }
+      nav {
+        font-family: free;
+        font-size: 12px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  section {
+    background-color: rgb(30, 44, 90);
+    .inner {
+      margin: auto;
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      figure {
+        position: sticky;
+        top: 60px;
+        left: 0;
+        &.pc {
+          background-image: url(./images/img_intro1.png);
+          width: 25%;
+          max-width: 340px;
+          height: 14vw;
+          min-height: 270px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+      article {
+        text-align: center;
+        font-family: NanumR;
+        em {
+          display: block;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 1vw;
+          padding: 20px;
+        }
+        i {
+          font-style: normal;
+        }
+        h2 {
+          padding-bottom: 50px;
+        }
+        .line {
+          text-align: center;
+          padding: 30px 0;
+          span {
+            display: inline-block;
+            width: 100px;
+            height: 2px;
+            background-color: #ffff;
+          }
+        }
+        .pic {
+          width: 100%;
+          max-width: 1200px;
+          height: 30vw;
+          max-height: 360px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        .desc {
+          padding-bottom: 50px;
+          &.desc2 {
+            padding-top: 50px;
+          }
+        }
+        .map {
+          width: 100%;
+          height: 30vw;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    &#sect1 {
+      display: flex;
+      flex-direction: column;
+      height: calc(100vh - 60px);
+      .banner {
+        flex: 1;
+      }
+      ul.thum {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        li {
+          a {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    &#sect2 {
+      article {
+        background-color: rgb(30, 44, 90);
+        h2 {
+          color: #ffe100;
+        }
+        p {
+          color: #ffff;
+        }
+      }
+      .pic1 {
+        background-image: url(./images/intro_pic.jpg);
+      }
+      .pic2 {
+        background-image: url(./images/Intro_incubating.jpg);
+      }
+    }
+    &#sect3 {
+      article {
+        background-color: #ffe7d3;
+        i {
+          color: #ee781f;
+        }
+      }
+      .map {
+        background-image: url(./images/yyd-map-orange.jpg);
+      }
+      .pic1 {
+        background-image: url(./images/yyd-pic.jpg);
+      }
+      figure.pc {
+        background-image: url(./images/img_yyd1.png);
+      }
+      figure.mobile {
+        background-color: #ffe7d3;
+      }
+    }
+    &#sect4 {
+      figure.pc {
+        background-image: url(./images/img_bp1.png);
+      }
+      figure.mobile {
+        background-color: #fffbdf;
+      }
+      article {
+        background-color: #fffbdf;
+      }
+      .pic1 {
+        background-image: url(./images/banpo-pic.jpg);
+      }
+      .desc {
+        i {
+          color: #ffe100;
+        }
+      }
+      .map {
+        background-image: url(./images/banpo-map.jpg);
+      }
+    }
+    &#sect5 {
+      figure.mobile {
+        background-color: #e3d5ff;
+      }
+      figure.pc {
+        background-image: url(./images/img_ddp1.png);
+      }
+      article {
+        background-color: #e3d5ff;
+      }
+      .pic1 {
+        background-image: url(./images/DDP-pic.jpg);
+      }
+      .map {
+        background-image: url(./images/ddp-map.jpg);
+      }
+      .desc {
+        i {
+          color: #7057a3;
+        }
+      }
+    }
+    &#sect6 {
+      figure.mobile {
+        background-color: #ffdeed;
+      }
+      figure.pc {
+        background-image: url(./images/img_cgc1.png);
+      }
+      article {
+        background-color: #ffdeed;
+      }
+      .pic1 {
+        background-image: url(./images/cgc-pic.jpg);
+      }
+      .map {
+        background-image: url(./images/cgc-map.jpg);
+      }
+      .desc {
+        i {
+          color: #eb6ea5;
+        }
+      }
+    }
+    &#sect7 {
+      figure.mobile {
+        background-color: #eaedc8;
+      }
+      figure.pc {
+        background-image: url(./images/img_sm1.png);
+      }
+      article {
+        background-color: #eaedc8;
+      }
+      .pic1 {
+        background-image: url(./images/seasonMarket-pic.jpg);
+      }
+      .map {
+        background-image: url(./images/seson_market-map.jpg);
+      }
+      .desc {
+        i {
+          color: #c4d700;
+        }
+      }
+    }
+    &#sect8 {
+      figure.mobile {
+        background-color: #d7ffef;
+      }
+      figure.pc {
+        background-image: url(./images/img_cht1.png);
+      }
+      article {
+        background-color: #d7ffef;
+      }
+      .pic1 {
+        background-image: url(./images/xmas-pic.jpg);
+      }
+    }
+  }
+  footer {
+    .row1 {
+      height: 26%;
+      // width: 50%;
+      background-color: #1e2c5a;
+      padding: 0 2%;
+      font-size: 12px;
+      color: white;
+      display: flex;
+      img {
+        width: 24px;
+      }
+      & > div {
+        display: flex;
+        justify-content: flex-start;
+        gap: 4%;
+        align-items: center;
+        padding: 20px 0;
+        span {
+          color: #ffe100;
+        }
+      }
+    }
+    .row2 {
+      padding: 1%;
+      height: 74%;
+      background-color: #575757;
+      display: flex;
+      justify-content: space-around;
+      ul.app li {
+        display: inline;
+        img {
+          width: 150px;
+        }
+      }
+      ul.sns {
+        justify-content: center;
+        align-items: center;
+        display: none;
+        gap: 10px;
+        margin-top: 20px;
+        padding-bottom: 14px;
+        li {
+          width: 24px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .info {
+        font-size: 10px;
+        color: #fff;
+        line-height: 1.2em;
+        font-weight: bold;
+      }
+      .seoulLogo{
+        
+        img{
+          width: 103px;
+        }
+      }
+    }
+  }
+
+  .home {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+// 반응형
+// 모바일시작
+@media screen and (max-width: 768px) {
+  header {
+    .inner {
+      height: 60px;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      & > a {
+        font-size: 2em;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      h1.logo {
+        width: 30%;
+        margin: auto;
+      }
+      nav {
+        display: none;
+      }
+      ul.gnb {
+        display: none;
+      }
+    }
+  }
+  section {
+    .inner {
+      flex-direction: column;
+      align-items: center;
+      figure {
+        &.mobile {
+          justify-content: space-around;
+          align-items: center;
+          width: 100%;
+          height: 4vh;
+          display: flex;
+          img {
+            height: 100%;
+            &:nth-child(2) {
+              height: 60%;
+            }
+          }
+        }
+        &.pc {
+          display: none;
+        }
+      }
+      article {
+        width: 100%;
+        h2 {
+          font-size: 4.2vw;
+        }
+        p {
+          font-size: 2.4vw;
+        }
+      }
+    }
+    &#sect1 {
+      .main-logo {
+        display: none;
+      }
+      ul.thum {
+        li {
+          width: 50%;
+          img {
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .row1 {
+      flex-direction: column;
+      div {
+        border-bottom: 1px solid #aaa;
+        width: 100%;
+        height: 50%;
+      }
+    }
+    .row2{
+      text-align: center;
+      flex-direction: column;
+      .sns{
+        display: flex;
+      }
+      .info{
+        margin-top: -1px;
+      }
+      .seoulLogo{
+        padding-top: 24px;
+      }
+    }
+  }
+}
+// 핸드폰 끝~~
+// pc시작
+@media screen and (min-width: 769px) {
+  header {
+    padding: 10px;
+    .inner {
+      font-size: 12px;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1200px;
+      height: 100%;
+      line-height: 60px;
+      margin: auto;
+      a.fa-bars {
+        display: none;
+      }
+      h1.logo {
+        width: 10%;
+        img {
+          vertical-align: middle;
+        }
+      }
+      nav {
+        display: block;
+        width: 60%;
+        gap: 25px;
+        ul.menu {
+          display: flex;
+          gap: 35px;
+          align-items: center;
+          img {
+            vertical-align: middle;
+          }
+        }
+      }
+      .gnb {
+        display: flex;
+        align-items: center;
+        width: 8%;
+        gap: 8px;
+        img {
+          width: 100%;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  section {
+    &:nth-child(even) figure {
+      order: 1;
+    }
+    &:nth-child(odd) article {
+      order: 1;
+    }
+    .inner {
+      figure {
+        height: 80px;
+        width: 350px;
+        &.mobile {
+          display: none;
+        }
+        &.pc {
+          display: block;
+        }
+      }
+      article {
+        width: 900px;
+        h2 {
+          font-size: 2.2vw;
+        }
+        p {
+          font-size: 1vw;
+          line-height: 1.2vw;
+        }
+      }
+    }
+    &#sect1 {
+      .main-logo {
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        z-index: 10;
+        img {
+          width: 100%;
+        }
+      }
+      ul.thum {
+        justify-content: center;
+        width: 100%;
+        height: 180px;
+        min-width: 1200px;
+        li {
+          width: 200px;
+          height: 100%;
+          &:first-child {
+            text-align: right;
+            flex: 1;
+            background: rgb(238, 120, 31);
+          }
+          &:last-child {
+            text-align: left;
+            flex: 1;
+            background: rgb(0, 52, 31);
+          }
+          img {
+            height: 100%;
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .row1 {
+      flex-direction: row;
+      & > div {
+        width: 50%;
+      }
+    }
+    .row2{
+      border: 1px solid #000;
+      flex-direction: row;
+      align-items: center;
+      .info{
+        order: 1;
+      }
+      .app{
+        order: 2;
+        padding-left: 150px;
+      }
+      .seoulLogo{
+        order: 3;
+        padding-left: 30px;
+      }
+    }
+  }
+}

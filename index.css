@@ -1,0 +1,524 @@
+@charset "UTF-8";
+@import url(/reset.css);
+@font-face {
+  font-family: free;
+  src: url(./font/free-fa-solid-900.woff2);
+}
+@font-face {
+  font-family: Download;
+  src: url(./font/다운로드.woff);
+}
+@font-face {
+  font-family: NanumB;
+  src: url(./font/NanumSquareB.woff2);
+}
+@font-face {
+  font-family: NanumR;
+  src: url(./font/NanumSquareR.woff2);
+}
+.wrap {
+  width: 100vw;
+  font-family: NanumR;
+}
+.wrap header {
+  position: fixed;
+  z-index: 90;
+  width: 100vw;
+  height: 60px;
+}
+.wrap header .inner {
+  display: flex;
+}
+.wrap header .inner h1.logo img {
+  width: 100%;
+}
+.wrap header .inner nav {
+  font-family: free;
+  font-size: 12px;
+}
+.wrap header .inner nav img {
+  width: 100%;
+}
+.wrap section {
+  background-color: rgb(30, 44, 90);
+}
+.wrap section .inner {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+}
+.wrap section .inner figure {
+  position: sticky;
+  top: 60px;
+  left: 0;
+}
+.wrap section .inner figure.pc {
+  background-image: url(./images/img_intro1.png);
+  width: 25%;
+  max-width: 340px;
+  height: 14vw;
+  min-height: 270px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wrap section .inner article {
+  text-align: center;
+  font-family: NanumR;
+}
+.wrap section .inner article em {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1vw;
+  padding: 20px;
+}
+.wrap section .inner article i {
+  font-style: normal;
+}
+.wrap section .inner article h2 {
+  padding-bottom: 50px;
+}
+.wrap section .inner article .line {
+  text-align: center;
+  padding: 30px 0;
+}
+.wrap section .inner article .line span {
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  background-color: white;
+}
+.wrap section .inner article .pic {
+  width: 100%;
+  max-width: 1200px;
+  height: 30vw;
+  max-height: 360px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wrap section .inner article .desc {
+  padding-bottom: 50px;
+}
+.wrap section .inner article .desc.desc2 {
+  padding-top: 50px;
+}
+.wrap section .inner article .map {
+  width: 100%;
+  height: 30vw;
+  background-repeat: no-repeat;
+}
+.wrap section#sect1 {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+}
+.wrap section#sect1 .banner {
+  flex: 1;
+}
+.wrap section#sect1 ul.thum {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.wrap section#sect1 ul.thum li a {
+  width: 100%;
+  height: 100%;
+}
+.wrap section#sect2 article {
+  background-color: rgb(30, 44, 90);
+}
+.wrap section#sect2 article h2 {
+  color: #ffe100;
+}
+.wrap section#sect2 article p {
+  color: white;
+}
+.wrap section#sect2 .pic1 {
+  background-image: url(./images/intro_pic.jpg);
+}
+.wrap section#sect2 .pic2 {
+  background-image: url(./images/Intro_incubating.jpg);
+}
+.wrap section#sect3 article {
+  background-color: #ffe7d3;
+}
+.wrap section#sect3 article i {
+  color: #ee781f;
+}
+.wrap section#sect3 .map {
+  background-image: url(./images/yyd-map-orange.jpg);
+}
+.wrap section#sect3 .pic1 {
+  background-image: url(./images/yyd-pic.jpg);
+}
+.wrap section#sect3 figure.pc {
+  background-image: url(./images/img_yyd1.png);
+}
+.wrap section#sect3 figure.mobile {
+  background-color: #ffe7d3;
+}
+.wrap section#sect4 figure.pc {
+  background-image: url(./images/img_bp1.png);
+}
+.wrap section#sect4 figure.mobile {
+  background-color: #fffbdf;
+}
+.wrap section#sect4 article {
+  background-color: #fffbdf;
+}
+.wrap section#sect4 .pic1 {
+  background-image: url(./images/banpo-pic.jpg);
+}
+.wrap section#sect4 .desc i {
+  color: #ffe100;
+}
+.wrap section#sect4 .map {
+  background-image: url(./images/banpo-map.jpg);
+}
+.wrap section#sect5 figure.mobile {
+  background-color: #e3d5ff;
+}
+.wrap section#sect5 figure.pc {
+  background-image: url(./images/img_ddp1.png);
+}
+.wrap section#sect5 article {
+  background-color: #e3d5ff;
+}
+.wrap section#sect5 .pic1 {
+  background-image: url(./images/DDP-pic.jpg);
+}
+.wrap section#sect5 .map {
+  background-image: url(./images/ddp-map.jpg);
+}
+.wrap section#sect5 .desc i {
+  color: #7057a3;
+}
+.wrap section#sect6 figure.mobile {
+  background-color: #ffdeed;
+}
+.wrap section#sect6 figure.pc {
+  background-image: url(./images/img_cgc1.png);
+}
+.wrap section#sect6 article {
+  background-color: #ffdeed;
+}
+.wrap section#sect6 .pic1 {
+  background-image: url(./images/cgc-pic.jpg);
+}
+.wrap section#sect6 .map {
+  background-image: url(./images/cgc-map.jpg);
+}
+.wrap section#sect6 .desc i {
+  color: #eb6ea5;
+}
+.wrap section#sect7 figure.mobile {
+  background-color: #eaedc8;
+}
+.wrap section#sect7 figure.pc {
+  background-image: url(./images/img_sm1.png);
+}
+.wrap section#sect7 article {
+  background-color: #eaedc8;
+}
+.wrap section#sect7 .pic1 {
+  background-image: url(./images/seasonMarket-pic.jpg);
+}
+.wrap section#sect7 .map {
+  background-image: url(./images/seson_market-map.jpg);
+}
+.wrap section#sect7 .desc i {
+  color: #c4d700;
+}
+.wrap section#sect8 figure.mobile {
+  background-color: #d7ffef;
+}
+.wrap section#sect8 figure.pc {
+  background-image: url(./images/img_cht1.png);
+}
+.wrap section#sect8 article {
+  background-color: #d7ffef;
+}
+.wrap section#sect8 .pic1 {
+  background-image: url(./images/xmas-pic.jpg);
+}
+.wrap footer .row1 {
+  height: 26%;
+  background-color: #1e2c5a;
+  padding: 0 2%;
+  font-size: 12px;
+  color: white;
+  display: flex;
+}
+.wrap footer .row1 img {
+  width: 24px;
+}
+.wrap footer .row1 > div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 4%;
+  align-items: center;
+  padding: 20px 0;
+}
+.wrap footer .row1 > div span {
+  color: #ffe100;
+}
+.wrap footer .row2 {
+  padding: 1%;
+  height: 74%;
+  background-color: #575757;
+  display: flex;
+  justify-content: space-around;
+}
+.wrap footer .row2 ul.app li {
+  display: inline;
+}
+.wrap footer .row2 ul.app li img {
+  width: 150px;
+}
+.wrap footer .row2 ul.sns {
+  justify-content: center;
+  align-items: center;
+  display: none;
+  gap: 10px;
+  margin-top: 20px;
+  padding-bottom: 14px;
+}
+.wrap footer .row2 ul.sns li {
+  width: 24px;
+}
+.wrap footer .row2 ul.sns li img {
+  width: 100%;
+}
+.wrap footer .row2 .info {
+  font-size: 10px;
+  color: #fff;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+.wrap footer .row2 .seoulLogo img {
+  width: 103px;
+}
+.wrap .home {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  header .inner {
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  header .inner > a {
+    font-size: 2em;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  header .inner h1.logo {
+    width: 30%;
+    margin: auto;
+  }
+  header .inner nav {
+    display: none;
+  }
+  header .inner ul.gnb {
+    display: none;
+  }
+  section .inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  section .inner figure.mobile {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 4vh;
+    display: flex;
+  }
+  section .inner figure.mobile img {
+    height: 100%;
+  }
+  section .inner figure.mobile img:nth-child(2) {
+    height: 60%;
+  }
+  section .inner figure.pc {
+    display: none;
+  }
+  section .inner article {
+    width: 100%;
+  }
+  section .inner article h2 {
+    font-size: 4.2vw;
+  }
+  section .inner article p {
+    font-size: 2.4vw;
+  }
+  section#sect1 .main-logo {
+    display: none;
+  }
+  section#sect1 ul.thum li {
+    width: 50%;
+  }
+  section#sect1 ul.thum li img {
+    width: 100%;
+    display: block;
+  }
+  footer .row1 {
+    flex-direction: column;
+  }
+  footer .row1 div {
+    border-bottom: 1px solid #aaa;
+    width: 100%;
+    height: 50%;
+  }
+  footer .row2 {
+    text-align: center;
+    flex-direction: column;
+  }
+  footer .row2 .sns {
+    display: flex;
+  }
+  footer .row2 .info {
+    margin-top: -1px;
+  }
+  footer .row2 .seoulLogo {
+    padding-top: 24px;
+  }
+}
+@media screen and (min-width: 769px) {
+  header {
+    padding: 10px;
+  }
+  header .inner {
+    font-size: 12px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    line-height: 60px;
+    margin: auto;
+  }
+  header .inner a.fa-bars {
+    display: none;
+  }
+  header .inner h1.logo {
+    width: 10%;
+  }
+  header .inner h1.logo img {
+    vertical-align: middle;
+  }
+  header .inner nav {
+    display: block;
+    width: 60%;
+    gap: 25px;
+  }
+  header .inner nav ul.menu {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+  }
+  header .inner nav ul.menu img {
+    vertical-align: middle;
+  }
+  header .inner .gnb {
+    display: flex;
+    align-items: center;
+    width: 8%;
+    gap: 8px;
+  }
+  header .inner .gnb img {
+    width: 100%;
+    vertical-align: middle;
+  }
+  section:nth-child(even) figure {
+    order: 1;
+  }
+  section:nth-child(odd) article {
+    order: 1;
+  }
+  section .inner figure {
+    height: 80px;
+    width: 350px;
+  }
+  section .inner figure.mobile {
+    display: none;
+  }
+  section .inner figure.pc {
+    display: block;
+  }
+  section .inner article {
+    width: 900px;
+  }
+  section .inner article h2 {
+    font-size: 2.2vw;
+  }
+  section .inner article p {
+    font-size: 1vw;
+    line-height: 1.2vw;
+  }
+  section#sect1 .main-logo {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    z-index: 10;
+  }
+  section#sect1 .main-logo img {
+    width: 100%;
+  }
+  section#sect1 ul.thum {
+    justify-content: center;
+    width: 100%;
+    height: 180px;
+    min-width: 1200px;
+  }
+  section#sect1 ul.thum li {
+    width: 200px;
+    height: 100%;
+  }
+  section#sect1 ul.thum li:first-child {
+    text-align: right;
+    flex: 1;
+    background: rgb(238, 120, 31);
+  }
+  section#sect1 ul.thum li:last-child {
+    text-align: left;
+    flex: 1;
+    background: rgb(0, 52, 31);
+  }
+  section#sect1 ul.thum li img {
+    height: 100%;
+    display: inline;
+  }
+  footer .row1 {
+    flex-direction: row;
+  }
+  footer .row1 > div {
+    width: 50%;
+  }
+  footer .row2 {
+    border: 1px solid #000;
+    flex-direction: row;
+    align-items: center;
+  }
+  footer .row2 .info {
+    order: 1;
+  }
+  footer .row2 .app {
+    order: 2;
+    padding-left: 150px;
+  }
+  footer .row2 .seoulLogo {
+    order: 3;
+    padding-left: 30px;
+  }
+}
