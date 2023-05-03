@@ -1,0 +1,257 @@
+@import url(/reset.css);
+
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+figure.bg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  min-width: 1600px;
+  z-index: -1;
+}
+figure.bg video{
+  height: 100%;
+}
+/*   background: rgb(0,72,236);
+  background: linear-gradient(180deg, rgba(0,72,236,1) 0%, 
+  rgba(255,255,255,1) 100%); */
+header {
+  position: fixed;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    6deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  width: 800px;
+  height: 100vh;
+  transform: skewX(-40deg);
+  left: -600px;
+}
+.main a {
+  color: #fff;
+}
+h1 {
+  position: fixed;
+  right: 130px;
+  top: 5px;
+}
+h1 img {
+  width: 100px;
+  transform: skewX(40deg);
+}
+
+ul.nav {
+  position: fixed;
+  top: 100px;
+  right: 0px;
+  width: 200px;
+}
+ul.nav a {
+  display: block;
+}
+li.main > a {
+  padding: 20px;
+  background: #0166ff;
+}
+li.main:hover > a,
+li.main.on > a {
+  background: #b0d0ff;
+}
+/* 디스플레이 블럭해줘야 스큐가 먹는다. 스판은 인라인요소 */
+ul.nav span {
+  display: block;
+  transform: skewX(45deg);
+}
+
+ul.sub a {
+  padding: 5px;
+}
+ul.sub span {
+  display: block;
+  transform: skewX(45deg);
+}
+ul.sub li:hover,
+ul.sub li.on a {
+  font-weight: bolder;
+}
+/* 서브메뉴 빼기 */
+.sub {
+  position: absolute;
+  background: rgb(238, 174, 202);
+  width: 100%;
+  top: 0;
+  left: 200px;
+  padding: 10px;
+  opacity: 0;
+  transition: 0.35s;
+  z-index: 10;
+}
+li.main {
+  position: relative;
+}
+/* 서브메뉴 보이기 */
+li.main:hover .sub,
+li.main.on .sub {
+  display: block;
+  opacity: 1;
+  z-index: 100;
+}
+/* display none-> block은 트랜지션이 안먹는다. */
+/* display가 겹친 상태에서 호버는 서로 영향을 받으므로 z-index를 써야한다 */
+
+/* 어사이드메뉴 */
+aside {
+  position: fixed;
+  background: rgb(148, 187, 233);
+  background: linear-gradient(
+    6deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 50%
+  );
+  width: 800px;
+  height: 100vh;
+  transform: skewX(-40deg);
+  right: -1000px;
+}
+.inner{
+    width: 100%;
+    height: 100%;
+    background: #0167ff34;
+    position: absolute;
+    left: 50%;
+}
+aside:hover {
+  right: -800px;
+  transition: 0.35s;
+}
+aside:hover .inner{
+    left: 8%;
+    transition: .35s .2s;
+}
+.arrow {
+  position: absolute;
+  left: -380px;
+  bottom: 0;
+  width: 200px;
+  height: 88px;
+}
+.arrow img {
+  font-size: 30px;
+  display: inline-block;
+  transform: skewX(40deg);
+  color: #fff;
+  position: absolute;
+  right: 0;
+  animation: arrowAni 2s linear infinite;
+}
+.arrow img {
+  width: 60px;
+}
+/* 애니메이션 넣으면 넣어둔 트랜스폼 값이 리셋 되니까
+위에 넣어둔 스큐값을 키프레임에 다시 넣어줘야한다 */
+@keyframes arrowAni {
+  from {
+    left: 0px;
+    opacity: 1;
+    transform: scale(0.8), skewX(40deg);
+    
+  }
+  to {
+    left: 130px;
+    opacity: 0;
+    transform: scale(1.2), skewX(40deg);
+  }
+}
+
+.arrow img:nth-child(1){
+    animation-delay:1s;
+}
+.arrow img:nth-child(2){
+    animation-delay: 2s;
+}
+/* left먹인 대상은 right를 못 먹인다. 계속 left해야함 */
+aside:hover .arrow{
+    left: 1000px;
+    transition: 2s;
+}
+.ball{
+    position: absolute;
+    bottom: 180px;
+    right: 20px;
+    width: 100px;
+    /* padding: 20px;
+    display: flex;
+    justify-content: center; */
+    /* background: #fff;
+    border-radius: 50%;
+    border: 4px solid #0166ff; */
+    animation: bounce 1s infinite;
+}
+.ball img{
+    width:50px;
+}
+@keyframes bounce {
+    0%, 20%, 53%, 80%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+    }
+    40%, 43% {
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+    }
+    70% {
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+    }
+    90% { transform: translate3d(0,-4px,0);
+    }
+    } 
+
+.ball.out{
+    animation: bounceOutUp 1s forwards;
+}
+@keyframes bounceOutUp {
+    20% {
+    transform: translate3d(0, -10px, 0);
+    }
+    40%, 45% {
+    opacity: 1;
+    transform: translate3d(0, 20px, 0);
+    }
+    100% {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0);
+    }
+    }
+
+
+    .icons{
+        position: absolute;
+        bottom: 40px;
+        left: 160px;
+        width: 50px;
+        transform: skewX(40deg);
+    }
+    figure img{
+        width: 50px;
+    }
+    .icons h3{
+        text-indent: 10px;
+    }
+    aside:hover li{
+        transform: translateX(0);
+        padding: 10px 0;
+        transition: .35s;
+    }
+    aside:hover li:nth-child(1){transition-delay: .1s;}
+    aside:hover li:nth-child(2){transition-delay: .3s;}
+    aside:hover li:nth-child(3){transition-delay: .5s;}
+    aside:hover li:nth-child(4){transition-delay: .7s;}
+    .icons li{
+        transform: translateX(1000px);
+    }
+
