@@ -1,0 +1,249 @@
+@import url(/reset.css);
+@font-face {
+    font-family: SCR;
+    src: url(./font/S-CoreDream-4Regular.woff2);
+}
+@font-face {
+    font-family: SCL;
+    src: url(./font/S-CoreDream-3Light.woff2);
+}
+@font-face {
+    font-family: SCB;
+    src: url(./font/S-CoreDream-6Bold.woff2);
+}
+body{
+  font-family: SCR;
+}
+h3 {
+  position: fixed;
+  font-size: 100px;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  color: red;
+}
+header {
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  z-index: 1;
+  font-family: SCB;
+  h1.logo {
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    &::after{
+      content: '';
+      background-color: #6e6e6e;
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      bottom: 15px;
+    }
+    img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 196/100;
+    }
+  }
+  ul {
+    width: 500px;
+    position: absolute;
+    left: calc(50% + 150px);
+    bottom: 5px;
+    display: flex;
+    li {
+      flex-shrink: 0;
+      color: #6e6e6e;
+      &.on{
+        color: rgb(228, 200, 100);
+      }
+      &:hover{
+        color: rgb(228, 200, 100);
+      }
+      a {
+        font-size: 15px;
+        display: block;
+        padding: 5px;
+      }
+    }
+  }
+}
+section {
+  position: relative;
+article {
+    font-family: SCR;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  &:nth-child(1) {
+    background-image: url(./images/main_01_반지.jpg);
+  }
+  &:nth-child(2) {
+    background-image: url(./images/main_02_팔찌.jpg);
+  }
+  &:nth-child(3) {
+    background-image: url(./images/main_03_지갑.jpg);
+  }
+  &:nth-child(4) {
+    background-image: url(./images/main_04_가방.jpg);
+  }
+  &:nth-child(5) {
+    background-image: url(./images/main_05_뜨개가방.jpg);
+  }
+  .summary {
+    width: 300px;
+    background: #33333369;
+    color: rgb(240, 240, 240);
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    h2 {
+      font-weight: normal;
+      line-height: 1.3;
+      b {
+        display: block;
+      }
+    }
+    p {
+      padding-top: 20px;
+      line-height: 1.2;
+    }
+  }
+}
+}
+footer{
+  padding:50px 10px;
+  line-height: 2;
+  border-top: 1px solid #adadad;
+  background-image: #f9f9f9;
+  position: relative;
+  z-index: 2;
+  .inner{
+    position: relative;
+    .col1{
+      width: 80%;
+      min-width: 980px;
+      margin-right: 200px;
+      float: left;
+      position: relative;
+    }
+    h1.logo{
+      width: 200px;
+      img{
+        width: 100%;
+        aspect-ratio: 200/40;
+      }
+    }
+    ul.footer-menu{
+      display: flex;
+      padding: 10px 0;
+      li{
+        margin-left: 20px;
+        a{
+          font-size: 14px;
+          &.privacy{
+            position: relative;
+            &::after{
+              content: '';
+              position: absolute;
+              bottom: -3px;
+              left: 0;
+              right: 0;
+              height: 1px;
+              background: #999;
+            }
+          }
+        }
+      }
+    }
+    .desc{
+      color: #b2b2b2;
+      font-size: 13px;
+      padding: 5px 0 0 0;
+      line-height: 2;
+      a{
+        color: #333;
+      }
+      span{
+        padding: 0 12px 0 0;
+      }
+    }
+    .copyright{
+      padding: 10px 0 25px 0;
+      color: #b2b2b2;
+      font-size: 11px;
+    }
+    .col2{
+      position: absolute;
+      right: 0;
+      top: 5px;
+      width: 200px;
+      text-align: right;
+      img{
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.side{
+.insta{
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 10px;
+  left: 10px;
+  img{
+    width: 100%;
+  }
+}
+.pannel{
+  position: fixed;
+  top: 30%;
+  width: 445px;
+  height: 50%;
+  left: calc(100% - 45px);
+ul{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  li{
+    width: 45px;
+    height: 45px;
+    &:first-child{
+      background: url(./images/panel_toggle.png);
+      transition: .35s;
+      &:hover{
+        background-position-x: -45px;
+      }
+    }
+    &:last-child{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #6e6e6e;
+      color: #fff;
+      font-size: 11px;
+    }
+  }
+}
+.inside{
+  position: absolute;
+  left: 45px;
+  width: 400px;
+  height: 100%;
+  background-color: blanchedalmond;
+}
+}
+}
+

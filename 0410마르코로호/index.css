@@ -1,0 +1,251 @@
+@charset "UTF-8";
+@import url(/reset.css);
+@font-face {
+  font-family: SCR;
+  src: url(./font/S-CoreDream-4Regular.woff2);
+}
+@font-face {
+  font-family: SCL;
+  src: url(./font/S-CoreDream-3Light.woff2);
+}
+@font-face {
+  font-family: SCB;
+  src: url(./font/S-CoreDream-6Bold.woff2);
+}
+body {
+  font-family: SCR;
+}
+
+h3 {
+  position: fixed;
+  font-size: 100px;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  color: red;
+}
+
+header {
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  z-index: 1;
+  font-family: SCB;
+}
+header h1.logo {
+  width: 150px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+header h1.logo::after {
+  content: "";
+  background-color: #6e6e6e;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+}
+header h1.logo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 196/100;
+}
+header ul {
+  width: 500px;
+  position: absolute;
+  left: calc(50% + 150px);
+  bottom: 5px;
+  display: flex;
+}
+header ul li {
+  flex-shrink: 0;
+  color: #6e6e6e;
+}
+header ul li.on {
+  color: rgb(228, 200, 100);
+}
+header ul li:hover {
+  color: rgb(228, 200, 100);
+}
+header ul li a {
+  font-size: 15px;
+  display: block;
+  padding: 5px;
+}
+
+section {
+  position: relative;
+}
+section article {
+  font-family: SCR;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+section article:nth-child(1) {
+  background-image: url(./images/main_01_반지.jpg);
+}
+section article:nth-child(2) {
+  background-image: url(./images/main_02_팔찌.jpg);
+}
+section article:nth-child(3) {
+  background-image: url(./images/main_03_지갑.jpg);
+}
+section article:nth-child(4) {
+  background-image: url(./images/main_04_가방.jpg);
+}
+section article:nth-child(5) {
+  background-image: url(./images/main_05_뜨개가방.jpg);
+}
+section article .summary {
+  width: 300px;
+  background: rgba(51, 51, 51, 0.4117647059);
+  color: rgb(240, 240, 240);
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+}
+section article .summary h2 {
+  font-weight: normal;
+  line-height: 1.3;
+}
+section article .summary h2 b {
+  display: block;
+}
+section article .summary p {
+  padding-top: 20px;
+  line-height: 1.2;
+}
+
+footer {
+  padding: 50px 10px;
+  line-height: 2;
+  border-top: 1px solid #adadad;
+  background-image: #f9f9f9;
+  position: relative;
+  z-index: 2;
+}
+footer .inner {
+  position: relative;
+}
+footer .inner .col1 {
+  width: 80%;
+  min-width: 980px;
+  margin-right: 200px;
+  float: left;
+  position: relative;
+}
+footer .inner h1.logo {
+  width: 200px;
+}
+footer .inner h1.logo img {
+  width: 100%;
+  aspect-ratio: 200/40;
+}
+footer .inner ul.footer-menu {
+  display: flex;
+  padding: 10px 0;
+}
+footer .inner ul.footer-menu li {
+  margin-left: 20px;
+}
+footer .inner ul.footer-menu li a {
+  font-size: 14px;
+}
+footer .inner ul.footer-menu li a.privacy {
+  position: relative;
+}
+footer .inner ul.footer-menu li a.privacy::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #999;
+}
+footer .inner .desc {
+  color: #b2b2b2;
+  font-size: 13px;
+  padding: 5px 0 0 0;
+  line-height: 2;
+}
+footer .inner .desc a {
+  color: #333;
+}
+footer .inner .desc span {
+  padding: 0 12px 0 0;
+}
+footer .inner .copyright {
+  padding: 10px 0 25px 0;
+  color: #b2b2b2;
+  font-size: 11px;
+}
+footer .inner .col2 {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 200px;
+  text-align: right;
+}
+footer .inner .col2 img {
+  vertical-align: middle;
+}
+
+.side .insta {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 10px;
+  left: 10px;
+}
+.side .insta img {
+  width: 100%;
+}
+.side .pannel {
+  position: fixed;
+  top: 30%;
+  width: 445px;
+  height: 50%;
+  left: calc(100% - 45px);
+}
+.side .pannel ul {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.side .pannel ul li {
+  width: 45px;
+  height: 45px;
+}
+.side .pannel ul li:first-child {
+  background: url(./images/panel_toggle.png);
+  transition: 0.35s;
+}
+.side .pannel ul li:first-child:hover {
+  background-position-x: -45px;
+}
+.side .pannel ul li:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6e6e6e;
+  color: #fff;
+  font-size: 11px;
+}
+.side .pannel .inside {
+  position: absolute;
+  left: 45px;
+  width: 400px;
+  height: 100%;
+  background-color: blanchedalmond;
+}
