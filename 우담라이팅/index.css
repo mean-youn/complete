@@ -1,0 +1,195 @@
+@import url(/reset.css);
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+header{
+    width: 100%;
+    height: 110px;
+    background: #ffffff;
+    position: fixed;
+    padding: 0 50px;
+    z-index: 990;
+}
+header>nav{
+    width: 605px;
+    height: 105px;
+    margin-left: 50px;
+}
+nav ul{
+    height: 100%;
+}
+
+li.mainmenu{
+    flex: 1;
+    height: 105px;
+    position: relative;
+    font-size: 17px;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+li.mainmenu>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+ul.submenu{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-top: 3px solid #f47a20;
+    font-size: 14px;
+    color: #aaaaaa;
+    display: none;
+}
+ul.submenu li {   
+    width: 100%;    
+    background: #fff;
+    padding: 0 7px;
+}
+ul.submenu li a{
+    display: block;
+    width: 100%;
+    height: 100%; 
+    padding: 15px 0;
+}
+ul.submenu li:not(:last-child) a{
+    border-bottom: 1px solid #aaaaaa;
+}
+/* 가이드버튼 */
+ul.guide{
+    border: 1px solid #e2e2e2;
+    position: absolute;
+    top: 110px;
+    right: 0;
+    z-index: 10;
+    background: #fff;
+    color: #aaaaaa;
+    text-transform: capitalize;
+}
+ul.guide li{
+    padding: 15px 30px;
+    position: relative;
+}
+ul.guide li img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20PX;
+}
+ul.guide li img.hover{
+    display: none;
+}
+ul.guide li:hover img.hover{display: block;}
+/* ul.guide li:hover img.off{display: none;} */
+ul.guide li span{
+    padding-left: 15px;
+}
+ul.guide li:hover{
+    color: #f47a20;
+}
+/* 섹션1------------------------------ */
+#sect1{
+    background: #000 url(./images/bg_visual.jpg) no-repeat center/cover;
+    /* 축약으로 쓸때 백그라운드 사이즈를 넣으려면 백그라운드 포지션을 설정해야 보여진다. */
+    /* 백그라운드 축약이 나중에 쓰이면 먼저 설정해둔 
+    백그라운드 사이즈, 이미지 등이 다 초기화된다. */
+    background-attachment: fixed;
+    height: 1000px;
+    position: relative;
+}
+/* 섹션1 타이틀 */
+.title{
+    text-align: center;
+    color: #fff;
+    top: 210px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    font-size: 50px;
+    letter-spacing: 25px;
+    line-height: 65px;
+    position: fixed;
+}
+.subtit{
+    display: block;
+    background: url(./images/bracket_title.png) no-repeat center top;
+    font-size: 15px;
+    letter-spacing: 18px;
+    line-height: 3em;
+    color: #aaaaaa;
+    text-transform: uppercase;
+}
+.high{
+    color: #f47a20;
+    background: url(./images/underline_title.png) no-repeat center bottom;
+}
+/* 섹션2--------------------------- */
+#sect2{
+    height: 880px;
+    position: relative;
+}
+/* 섹션2메뉴--- */
+ul.menu{
+    position: absolute;
+    width: 100px;
+    height: 600px;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    z-index: 10;
+    text-align: center;
+}
+ul.menu li{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul.menu li:nth-child(1){
+    background: #f47a20 url(./images/전체메뉴.png);
+}
+ul.menu li.on{
+    color: #f47a20;
+}
+ul.menu li:hover{
+    color: #f47a20;
+}
+/* 섹션2 설명----- */
+.desc{
+    position: absolute;
+    left: 250px;
+    top: 20%;
+    z-index: 10;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    line-height: 2em;
+}
+.desc h2{
+    width: 165px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 2em;
+    text-transform: capitalize;
+    background: url(./images/point_pf_title.png) no-repeat left center;
+}
+.desc span{
+    display: block;
+    font-size: 32px;
+    line-height: 3em;
+}
+
+
+
+
+
