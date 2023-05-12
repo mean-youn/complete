@@ -1,0 +1,447 @@
+@import url(/reset.css);
+@font-face {
+  font-family: NotoSansR;
+  src: url(./font/NotoSansKR-Regular.woff);
+}
+@font-face {
+  font-family: NotoSansM;
+  src: url(./font/NotoSansKR-Medium.woff);
+}
+@font-face {
+  font-family: NotoSansB;
+  src: url(./font/NotoSansKR-Bold.woff);
+}
+@font-face {
+  font-family: CoreSansEL;
+  src: url(./font/CoreSansC25ExtraLight.woff);
+}
+@font-face {
+  font-family: CoreSansR;
+  src: url(./font/CoreSansC45Regular.woff);
+}
+@font-face {
+  font-family: CoreSansM;
+  src: url(./font/CoreSansC55Medium.woff);
+}
+@font-face {
+  font-family: CoreSansB;
+  src: url(./font/CoreSansC65Bold.woff);
+}
+@font-face {
+  font-family: CoreSansEB;
+  src: url(./font/CoreSansC75ExtraBold.woff);
+}
+body {
+  font-family: CoreSansR, NotoSansR;
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.header-top {
+  position: relative;
+  background: #f5f6f7;
+}
+.header-top .inner {
+  font-size: 11px;
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+.header-top .inner a.link img {
+  vertical-align: middle;
+}
+.header-top .inner ul {
+  display: flex;
+}
+.header-top .inner ul li {
+  padding: 0 10px 10px 0;
+}
+.header-top .inner ul li span {
+  width: 8px;
+  height: 10px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+.header-top .inner ul li span.cart-img {
+  width: 8px;
+  height: 10px;
+  background-position: -11px -95px;
+  background-size: 133px auto;
+  vertical-align: -1px;
+  background-image: url(./images/sp_icon.png);
+}
+.header-top .inner ul li span.cart-more {
+  width: 8px;
+  height: 5px;
+  margin: -4px 0 0 6px;
+  background-position: -16px 0;
+  background-image: url(./images/arrow_bottom.png);
+}
+
+header {
+  height: 86px;
+}
+header .logo a {
+  display: block;
+  width: 160px;
+  height: 28px;
+  background: url(./images/logo_bk.png) no-repeat left top/cover;
+}
+header .inner {
+  height: 100%;
+  width: 1140px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+header .inner .header-service {
+  align-items: center;
+}
+header .inner .header-service ul.menu li {
+  padding: 0 10px;
+}
+header .inner .header-service form {
+  width: 262px;
+  height: 30px;
+  border-radius: 20px;
+  padding: 5px 7px;
+  background-color: #fff;
+  border: 1px solid #ff214f;
+  border-radius: 15px;
+  position: relative;
+}
+header .inner .header-service form input {
+  color: #666;
+  font-size: 12px;
+  border: 0;
+  width: 98%;
+  font-weight: bold;
+}
+header .inner .header-service form span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background-position: -108px 0;
+  background-image: url(./images/sp_icon.png);
+}
+
+.gnb {
+  height: 46px;
+}
+.gnb .inner {
+  width: 1140px;
+  height: 100%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.gnb .inner > ul {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #555;
+  position: relative;
+}
+.gnb .inner > ul li {
+  padding: 0 10px;
+}
+.gnb .inner > ul li:hover {
+  color: #ff3131;
+}
+.gnb .inner .line {
+  width: 1px;
+  height: 30%;
+  background-color: #999;
+}
+
+#sect1,
+#sect5 {
+  height: 100vh;
+}
+
+#sect1 {
+  height: 600px;
+}
+#sect1 a.rolling {
+  position: absolute;
+  width: 1140px;
+  height: 100%;
+}
+#sect1 a.rolling .copywrap {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-family: CoreSansR;
+}
+#sect1 a.rolling .copywrap > * {
+  text-align: left;
+}
+#sect1 a.rolling .copywrap .copy p {
+  font-size: 40px;
+  line-height: 1.25;
+  font-weight: bold;
+}
+#sect1 a.rolling .copywrap .copy span {
+  display: inline-block;
+  position: relative;
+  height: 24px;
+  padding: 0 8px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 23px;
+  font-weight: bold;
+  border-radius: 12px;
+  vertical-align: top;
+}
+#sect1 a.rolling .copywrap .copy span::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 12px 0 0;
+}
+#sect1 a.rolling .copywrap .copy span.red {
+  background-color: #ff3131;
+}
+#sect1 a.rolling .copywrap .copy span.red::after {
+  border-color: #ff3131 transparent transparent transparent;
+}
+#sect1 a.rolling .copywrap .copy span.green {
+  background-color: #00b160;
+}
+#sect1 a.rolling .copywrap .copy span.green::after {
+  border-color: #00b160 transparent transparent transparent;
+}
+#sect1 a.rolling .copywrap .copy span.black {
+  background-color: #000;
+}
+#sect1 a.rolling .copywrap .copy span.black::after {
+  border-color: #000 transparent transparent transparent;
+}
+#sect1 a.rolling .copywrap .subcopy {
+  font-size: 15px;
+  line-height: 60px;
+  color: #0d0d0d !important;
+}
+#sect1 .custom {
+  color: #fff;
+}
+#sect1 .custom.swiper-button-prev {
+  left: 80px;
+}
+#sect1 .custom.swiper-button-next {
+  right: 80px;
+}
+
+#sect2 {
+  padding: 58px 0;
+  background: url(./images/bg_pattern_slash.png);
+}
+#sect2 .inner {
+  width: 1140px;
+  margin: 0 auto;
+}
+#sect2 .inner::after {
+  visibility: hidden;
+  display: block;
+  clear: both;
+  height: 0;
+  content: "";
+}
+#sect2 .inner .flLt {
+  float: left;
+}
+#sect2 .inner .flLt p {
+  padding: 20px 0 117px;
+  color: #ff3131;
+  font-size: 32px;
+  line-height: 33px;
+  font-weight: 200;
+}
+#sect2 .inner .items {
+  float: right;
+  text-align: center;
+  padding-right: 18px;
+}
+#sect2 .inner .items ul {
+  width: 880px;
+}
+#sect2 .inner .items ul li {
+  float: left;
+  width: 244px;
+  margin-left: 46px;
+}
+#sect2 .inner .items ul li .thumb {
+  width: 220px;
+  border: 12px solid #fff;
+  border-radius: 50%;
+}
+#sect2 .inner .items ul li img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#sect2 .inner .items ul li .name {
+  padding: 15px 12px 0;
+  font-size: 15px;
+  line-height: 1.4;
+  white-space: normal;
+}
+#sect2 .inner .items ul li .price {
+  font-size: 16px;
+  font-weight: bold;
+}
+#sect2 .inner .items ul li .price span {
+  color: #ff3131;
+}
+
+#sect3 {
+  display: flex;
+  width: 100%;
+  height: 680px;
+  overflow: hidden;
+  position: relative;
+}
+#sect3 .inner {
+  display: flex;
+  position: relative;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #f7f7f7;
+}
+#sect3 article {
+  display: flex;
+  position: relative;
+  left: 0;
+  height: 680px;
+  background: #f7f7f7;
+}
+#sect3 article div.down {
+  align-self: flex-end;
+}
+#sect3 .btn {
+  position: absolute;
+  display: block;
+  z-index: 99;
+  width: 20px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#sect3 .btn.prev {
+  left: 50px;
+}
+#sect3 .btn.next {
+  z-index: 99;
+  right: 50px;
+}
+#sect3 .btn img {
+  width: 100%;
+  display: block;
+}
+
+footer {
+  min-width: 1140px;
+  color: #000;
+  font-size: 13px;
+  font-weight: normal;
+}
+footer .footer-nav {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+footer .footer-nav ul {
+  position: relative;
+  overflow: hidden;
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  padding: 8px 0;
+}
+footer .footer-nav ul li {
+  font-size: 15px;
+  padding: 0px 13px;
+}
+footer .footer-nav ul li:nth-child(1) {
+  padding: 0 13px 0 0;
+}
+footer .footer-nav ul li:hover {
+  color: #ff3131;
+}
+footer .footer-V18 {
+  position: relative;
+  width: 1100px;
+  margin: 42px auto;
+  padding-left: 200px;
+  text-align: left;
+}
+footer .footer-V18 .footer-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 140px;
+}
+footer .footer-V18 .footer-cont {
+  float: left;
+}
+footer .footer-V18 .company {
+  width: 568px;
+}
+footer .footer-V18 .company em {
+  font-size: 16px;
+  font-style: normal;
+}
+footer .footer-V18 .company p {
+  line-height: 3;
+  font-style: normal;
+}
+footer .footer-V18 .cs {
+  width: 300px;
+  padding-top: 47px;
+}
+footer .footer-V18 .cs .footer-cscenter {
+  width: 310px;
+  padding: 16px 0 25px 16px;
+  background: #f7f7f7;
+  border-radius: 8px;
+}
+footer .footer-V18 .cs .footer-cscenter .tit {
+  font-weight: bold;
+  line-height: 3;
+}
+footer .footer-V18 .cs .footer-cscenter span {
+  line-height: 2;
+  font-size: 11px;
+  color: #999;
+}
+footer .footer-V18 .cs .footer-cscenter span.time {
+  color: #000;
+}
+footer .footer-V18 .footer-sns {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 255px;
+  top: 0;
+}
+footer .footer-V18 .footer-sns img {
+  width: 25px;
+}
