@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포렌코즈-반응형</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      .mySwiper1 {
+        width: 100%;
+        height: 50vh;
+        position: relative;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .btn {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+      }
+
+      .btn img {
+        width: 100%;
+      }
+
+      .prev {
+        left: 1%;
+      }
+
+      .next {
+        right: 1%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="inner flex">
+            <ul class="gnb flex">
+              <li>
+                <a href="#"><img src="./images/top_cart.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/top_myshop.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/top_search.png" alt="" /></a>
+              </li>
+            </ul>
+                  <h1 class="logo"><img src="./images/logo.png" alt="" /></h1>
+                  <nav>
+            <ul class="menu flex">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">BRAND</a></li>
+              <li><a href="#">SHOP</a></li>
+              <li><a href="#">BEST</a></li>
+            </ul>
+                  </nav>
+        </div>
+    </header>
+    <div class="swiper mySwiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/0314_mainpc_bareshadow.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/0314_mainpc_chiffon.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/0314_mainpc_Mood_Mascara.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/0314_mainpc_moodglowtint2.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/0314_mainpc_multibalm2.jpg" alt="" />
+        </div>
+      </div>
+      <div class="btn prev"><img src="./images/main_btn_L02.png" alt="" /></div>
+      <div class="btn next"><img src="./images/main_btn_R02.png" alt="" /></div>
+    </div>
+    <section id="sect1">
+        <div class="inner">
+          <h2>화이트데이 이벤트</h2>
+          <p>1+1</p>
+        <ul class="product">
+          <li>
+            <figure><img class="on" src="./images/list1.jpg" alt="" /></figure>
+            <div class="summary">
+              <h3>Pomme</h3>
+              <p>말린 사과 껍질을 닮은 레드</p>
+            </div>
+          </li>
+          <li>
+            <figure><img class="on" src="./images/list2.jpg" alt="" /></figure>
+            <div class="summary">
+              <h3>Gala</h3>
+              <p>생기 가득 앵두를 녹인 듯한 웜레드</p>
+            </div>
+          </li>
+          <li>
+            <figure><img class="on" src="./images/list3.jpg" alt="" /></figure>
+            <div class="summary">
+              <h3>Munuit</h3>
+              <p>아찔하게 물드는 팝 핑크</p>
+            </div>
+          </li>
+          <li>
+            <figure><img class="on" src="./images/list4.jpg" alt="" /></figure>
+            <div class="summary">
+              <h3>Roux</h3>
+              <p>말린 듯 안 말린 듯, 사연 있어 보이는 오묘한 톤 다운 딥 로즈</p>
+            </div>
+          </li>
+          <li>
+            <figure><img class="on" src="./images/list5.jpg" alt="" /></figure>
+            <div class="summary">
+              <h3>Brun</h3>
+              <p>100일 말린 단풍 잎을 톡, 메이플 로즈</p>
+            </div>
+          </li>
+          <li>
+            <figure><img class="on" src="./images/list6.jpg" alt="" /></figure>
+            <div class="summary">
+              <h3>Mignon</h3>
+              <p>사랑스러운 구운 복숭아 빛 데일리 코랄</p>
+            </div>
+          </li>
+          <li>
+            <figure><img class="on" src="./images/list7.jpg" alt="" /></figure>
+            <div class="summary">
+              <h3>Peak</h3>
+              <p>연하게 바르면 차분한, 짙게 바르면 도도한 리얼 칠리</p>
+            </div>
+          </li>
+          <li>
+            <figure><img class="on" src="./images/list8.jpg" alt="" /></figure>
+            <div class="summary">
+              <h3>Castella</h3>
+              <p>사연 가득 여주인공처럼, 깔끔하고 따뜻한 카스테라 베이지</p>
+            </div>
+          </li>
+          <li>
+            <figure><img class="on" src="./images/list9.jpg" alt="" /></figure>
+            <div class="summary">
+              <h3>Tender</h3>
+              <p>편한 매력의 분위기 미인, 레드 한 방울 섞인 브릭 로즈</p>
+            </div>
+          </li>
+          <li>
+            <figure><img class="on" src="./images/list10.jpg" alt="" /></figure>
+            <div class="summary">
+              <h3>Pimpant</h3>
+              <p>상큼하게 주위를 밝히는 장난기 가득한 레디쉬 로즈</p>
+            </div>
+          </li>
+          <li>
+            <figure><img class="on" src="./images/list11.jpg" alt="" /></figure>
+            <div class="summary">
+              <h3>Nouveau</h3>
+              <p>브라운을 섞어 유니크한 말린 장미, 빈티지 핑크</p>
+            </div>
+          </li>
+          <li>
+            <figure><img class="on" src="./images/list12.jpg" alt="" /></figure>
+            <div class="summary">
+              <h3>Jabouley</h3>
+              <p>과즙기! 얼굴에 형광등 켜는 맑은 네온 레드</p>
+            </div>
+          </li>
+          <li>
+            <figure><img class="on" src="./images/list13.jpg" alt="" /></figure>
+            <div class="summary">
+              <h3>Vivant</h3>
+              <p>비주얼 센터 입덕을 부르는 핑크 톡 리빙 코랄</p>
+            </div>
+          </li>
+          <li>
+            <figure><img class="on" src="./images/list14.jpg" alt="" /></figure>
+            <div class="summary">
+              <h3>Meek</h3>
+              <p>민낯부터 스모키까지 다 어울리는 말갛고 수수한 MLBB코랄</p>
+            </div>
+          </li>
+          <li>
+            <figure><img class="on" src="./images/list15.jpg" alt="" /></figure>
+            <div class="summary">
+              <h3>Coy</h3>
+              <p>수줍고 사랑스러운 코랄 핑크, MLBB 로즈 페탈</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <ul class="inner">
+        <li class="mainmenu"><p>CUSTOMER CENTER</p>
+          <ul class="submenu">
+            <li class="kakao">카카오상담톡 @포렌코즈 <br>1588-0719</li>
+            <li>평일: 10:00-16:00</li>
+            <li>점심: 12:30-14:00</li>
+            <li>토/일요일 및 공휴일은 휴무입니다.</li>
+          </ul>
+        </li>
+        <li class="mainmenu"><p>BANK INFO</p>
+          <ul class="submenu">
+            <li>예금주 : (주)포렌코즈</li>
+            <li>입금자명 불일치시 자동연동이 되지않습니다.</li>
+            <li>고객센터 또는 Q&A 문의주세요.</li>
+            <li class="sel">
+              <select id="">
+                <option value="">은행별 계좌 정보안내</option>
+                <option value="">국민 070-25-0038-111</option>
+                <option value="">농협 100012-55-016688</option>
+                <option value="">신한 346-05-018264</option>
+              </select>
+            </li>
+          </ul>
+        </li>
+        <li class="mainmenu"><p>GLOBAL</p>
+          <ul class="submenu">
+            <li class="global"><a href="#"><img src="./images/ft_global01.gif" alt=""></a><a href="#"><img src="./images/ft_global02.gif" alt=""></a></li>
+          </ul>
+        </li>
+        <li class="mainmenu"><p>PRODUCT</p>
+          <ul class="submenu">
+            <li>베스트</li>
+            <li>이벤트</li>
+          </ul>
+        </li>
+        <li class="mainmenu"><p>COMMUNITY</p>
+          <ul class="submenu">
+            <li>회원가입</li>
+            <li>마이페이지</li>
+            <li>장바구니</li>
+            <li>위시리스트</li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper1", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 10000,
+          disableOnInteraction: false,
+        },
+      });
+      $(".next").click(function () {
+        swiper.slideNext();
+      });
+      $(".prev").click(function () {
+        swiper.slidePrev();
+      });
+    </script>
+  </body>
+</html>
