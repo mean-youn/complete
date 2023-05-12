@@ -1,0 +1,116 @@
+@import "/reset.css";
+
+header {
+  width: 100%;
+  padding-bottom: 20px;
+  h1 {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    aspect-ratio: 181/320;
+    background: #cccc url(./image/logo-img.jpg) no-repeat left top / cover;
+    img {
+      display: block;
+      aspect-ratio: 97/40;
+      width: 45%;
+      margin: auto;
+      position: absolute;
+      top: 58%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  nav {
+    padding-top: 20px;
+    ul.menu {
+      display: flex;
+      justify-content: space-around;
+    }
+    ul li {
+      height: 26px;
+    }
+    &:hover {
+      background-position-x: center;
+    }
+  }
+}
+section {
+  float: right;
+  .intro {
+    padding: 20px 0;
+    width: 88%;
+    margin:20px auto;
+    font-size: 18px;
+    line-height: 30px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+  .slidewrap {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    img {
+      width: 98%;
+    }
+  }
+  .articlewrap {
+    padding: 20px;
+    article {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      figure {
+        width: 30%;
+        min-width:150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        img {
+          display: block;
+          width: 100%;
+          border-radius: 50%;
+        }
+        em{
+          font-style: normal;
+          line-height: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+footer {
+  height: 100px;
+  background: #ffd200;
+}
+
+@media screen and (max-width: 520px) {
+}
+@media screen and (min-width: 521px) and (max-width: 1279px) {
+  section {
+    width: 70%;
+  }
+  header {
+    width: 28%;
+    float: left;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .wrap {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+  h1 {
+    width: 28%;
+  }
+  section {
+    width: 75%;
+  }
+  header {
+    width: 25%;
+    float: left;
+  }
+}
